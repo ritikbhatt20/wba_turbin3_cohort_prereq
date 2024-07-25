@@ -16,6 +16,7 @@
     "@types/node": "^20.14.12",
     "bs58": "^6.0.0",
     "prompt-sync": "^4.2.0",
+    "structured-clone": "^0.2.2",
     "typescript": "^5.5.4"
   },
   "devDependencies": {

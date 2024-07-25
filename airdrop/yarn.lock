@@ -511,6 +511,11 @@ strip-ansi@^5.0.0:
   dependencies:
     ansi-regex "^4.1.0"
 
+structured-clone@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/structured-clone/-/structured-clone-0.2.2.tgz#ac92b6be31958a643db30f1335abc6a1b02dfdc2"
+  integrity sha512-SucNWVxwmfAjWrzQ9Xsuv4JIDtS/Qpx+MwZD2NEx2CeMpf3hgqvWKssll34trTu6M7ywd7WZDDKO8hhq0SZiAA==
+
 superstruct@^0.15.4:
   version "0.15.5"
   resolved "https://registry.yarnpkg.com/superstruct/-/superstruct-0.15.5.tgz#0f0a8d3ce31313f0d84c6096cd4fa1bfdedc9dab"

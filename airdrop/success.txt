@@ -15,3 +15,15 @@ Successful Airdrop of remaining balance while calculating fee - {
     Success! Check out your TX here: https://explorer.solana.com/tx/4DmPHMoDA2HYwzPJ4x1ojK9crJFuh8yBbxxVRgaRyEqueTj5HcpJjsTMYNCgh5si51ZS58GkouG3gwL2c7HT84Dp?cluster=devnet
     Done in 15.28s.
 }
+
+Successful Pda generation - {
+    ritikbhatt020@Ritik:~/wba3_Turbin_Cohort/airdrop$ yarn enroll
+    yarn run v1.22.22
+    warning ../../package.json: No license field
+    $ ts-node ./enroll.ts
+    PublicKey [PublicKey(4xFxSsA9vnMHS4WutAJvEwv8CFaaiLrmNHd58h7n2X3V)] {
+    _bn: <BN: 3abaea81ad8cfc78d5476431f25ceb635fa3c0f8085a7ba94d7db21f28c7aa00>
+    }
+    Success! Check out your TX here: https://explorer.solana.com/tx/Pn1F7bB1WZPNt596Pd8vJuw6x2D9BDBfTJg6JkGkMKzr3aRfLrDS2aUKFodXwjcGLey6rMkHC4LCGGxRN56BGru?cluster=devnet
+    Done in 5.53s.
+}
