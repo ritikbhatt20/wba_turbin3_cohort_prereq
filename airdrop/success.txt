@@ -1,0 +1,8 @@
+Successful airdrop - {
+    ritikbhatt020@Ritik:~/wba3_Turbin_Cohort/airdrop$ yarn airdrop
+    yarn run v1.22.15
+    warning ../../package.json: No license field
+    $ ts-node ./airdrop.ts
+    Success! Check out your TX here: https://explorer.solana.com/tx/5H8Xw49vZwn3UAq7zwT86rK2HwLoPQ35KRUQhCa6HSdBoRKbEVs3NiDa7i8jEeS1W1LPZPoBVZuGjPnDFJkr6ASg?cluster=devnet
+    Done in 1.79s.
+}

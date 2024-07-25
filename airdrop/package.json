@@ -7,7 +7,8 @@
     "keygen": "ts-node ./keygen.ts",
     "airdrop": "ts-node ./airdrop.ts",
     "transfer": "ts-node ./transfer.ts",
-    "enroll": "ts-node ./enroll.ts"
+    "enroll": "ts-node ./enroll.ts",
+    "convert": "ts-node ./convert.ts"
   },
   "dependencies": {
     "@solana/web3.js": "^1.95.1",
@@ -17,6 +18,7 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "ts-node": "^10.9.2"
   }
 }
