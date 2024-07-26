@@ -1,0 +1,12 @@
+1- { 
+    running 1 test
+    You've generated a new Solana wallet: HsDTxk3LaN8de8S1GyULxQHWC5esvMySexPhHY7vR7dR
+
+    To save your wallet, copy and paste the following into a JSON file:
+    [217, 245, 32, 154, 238, 29, 49, 109, 158, 207, 162, 194, 117, 19, 168, 167, 100, 195, 134, 197, 42, 181, 236, 144, 71, 234, 237, 123, 238, 6, 187, 31, 250, 152, 32, 21, 21, 224, 163, 63, 101, 123, 4, 49, 200, 28, 123, 12, 127, 235, 186, 230, 163, 118, 154, 81, 133, 236, 157, 111, 109, 217, 226, 168]
+    test tests::keygen ... ok
+
+    test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
+}
+
+2- 
