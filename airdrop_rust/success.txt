@@ -1,4 +1,4 @@
-1- { 
+1- Successfully created a keypair - { 
     running 1 test
     You've generated a new Solana wallet: HsDTxk3LaN8de8S1GyULxQHWC5esvMySexPhHY7vR7dR
 
@@ -9,4 +9,22 @@
     test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 0.00s
 }
 
-2- 
+2- Made tests for base58 to byte array and from byte array to base58 - {
+    running 1 test
+    Input your private key as base58:
+    HsDTxk3LaN8de8S1GyULxQHWC5esvMySexPhHY7vR7dR
+    Your wallet file is:
+    [250, 152, 32, 21, 21, 224, 163, 63, 101, 123, 4, 49, 200, 28, 123, 12, 127, 235, 186, 230, 163, 118, 154, 81, 133, 236, 157, 111, 109, 217, 226, 168]
+    test tests::base58_to_wallet ... ok
+
+    test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 10.25s
+}
+
+3- Successfully airdropped Sol tokens to dev wallet - {
+    running 1 test
+    Success! Check out your TX here:
+    https://explorer.solana.com/tx/2YJZWN1jZAswAf8WjZzDKLk4Y9dM8RUbGP5f98DyEJ5QUsUimh5tuJo1iQ4ceq1632hzBy2TEQEz473KbXW1apWN?cluster=devnet
+    test tests::airdop ... ok
+
+    test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 1.41s
+}
