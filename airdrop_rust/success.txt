@@ -28,3 +28,12 @@
 
     test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 1.41s
 }
+
+4- Successfully completed the transfer of sol from dev wallet to my WBA wallet - {
+    running 1 test
+    Success! Check out your TX here:
+    https://explorer.solana.com/tx/4btC6ezRXJPmWSWtypu7bfJYTgK2J2YHNMHB1Lu7gCGutjq95Y7D2FU2LyaFsTVn7YGc43xNp3TyAvSX48thcyqt/?cluster=devnet
+    test tests::transfer_sol ... ok
+
+    test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 12.38s
+}
