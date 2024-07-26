@@ -37,3 +37,12 @@
 
     test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 12.38s
 }
+
+5- Successfully emptied dev-wallet and transferred all Sol tokens after minus of fee - {
+    running 1 test
+    Success! Check out your TX here:
+                https://explorer.solana.com/tx/3817LHuCZcgKueJDaeKStM7rnZSnoVne7DLUxchQXEXq7FVUsqqQjBiHw885THbWLeNAJhJnyF6FXB6pjGBMQA4w/?cluster=devnet
+    test tests::transfer_sol ... ok
+
+    test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 12.94s
+}

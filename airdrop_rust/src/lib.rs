@@ -6,6 +6,7 @@ mod tests {
         system_instruction::transfer,
     };
     use solana_sdk::{
+        message::Message,
         signature::{Keypair, Signer, read_keypair_file},
         transaction::Transaction,
     };
@@ -89,16 +90,37 @@ mod tests {
             .get_latest_blockhash()
             .expect("Failed to get recent blockhash");
 
-        // Create and sign the transaction
+        // Get balance of dev wallet
+        let balance = rpc_client
+            .get_balance(&keypair.pubkey())
+            .expect("Failed to get balance");
+
+        // Create a test transaction to calculate fees
+        let message = Message::new_with_blockhash(
+            &[transfer(
+                &keypair.pubkey(),
+                &to_pubkey,
+                balance,
+            )],
+            Some(&keypair.pubkey()),
+            &recent_blockhash
+        );
+
+        // Calculate exact fee rate to transfer entire SOL amount out of account minus fees
+        let fee = rpc_client
+            .get_fee_for_message(&message)
+            .expect("Failed to get fee calculator");
+
+        // Deduct fee from lamports amount and create a TX with correct balance
         let transaction = Transaction::new_signed_with_payer(
             &[transfer(
                 &keypair.pubkey(),
                 &to_pubkey,
-                1_000_000, // Transfer 0.1 SOL 
+                balance - fee,
             )],
             Some(&keypair.pubkey()),
             &vec![&keypair],
-            recent_blockhash,
+            recent_blockhash
         );
 
         // Send the transaction
@@ -109,7 +131,7 @@ mod tests {
         // Print the transaction link
         println!(
             "Success! Check out your TX here:
-https://explorer.solana.com/tx/{}/?cluster=devnet",
+            https://explorer.solana.com/tx/{}/?cluster=devnet",
             signature
         );
     }
