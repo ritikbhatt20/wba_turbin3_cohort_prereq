@@ -16,6 +16,7 @@ function walletToBase58() {
   const wallet = walletString.split(',').map(Number);
   const base58 = bs58.encode(Buffer.from(wallet));
   console.log('Base58 private key:', base58);
+  
 }
 
 // CLI menu to choose the conversion direction
